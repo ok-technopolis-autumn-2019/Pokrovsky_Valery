@@ -1,0 +1,48 @@
+body{
+    background: #F5F5F5;
+}
+.todos{
+        margin-left: 20%;
+        margin-right: 40%
+}
+.todos-header{
+    text-align: center;
+}
+.todos-main{
+    background: #FFFFFF;
+}
+.todos-add{
+    padding: 2%;
+    border: solid 1px  #F5F5F5;
+    
+}
+
+.todos-item{
+    padding: 2%;
+    text-align: left;
+    border: solid 1px #F5F5F5;
+}
+.todos-item:hover{
+    background: #FAFAFA;
+    padding: 2%;
+    text-align: left;
+    border: solid 1px #F5F5F5;
+}
+.todos-footer{
+    padding: 2%;
+}
+.todos-items-left{
+    float: left;
+}
+.todos-items-left{
+    float: left;
+}
+.todos-footer-radio{
+    float: center;
+}
+.todos-all-completed{
+    float: right;
+}
+.todos-item-delete{
+    float: right;
+}
