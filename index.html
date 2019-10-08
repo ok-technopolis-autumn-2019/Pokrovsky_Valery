@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Todos</title>
-    <link rel="stylesheet" href="styles.css">
+    <!--    <link rel="stylesheet" href="styles.css">-->
 </head>
 
 <body>
@@ -15,34 +15,27 @@
                 <button></button>
                 <input name="todos-add-input" type="text" value="What needs to be done?">
             </div>
-
-            <label>
+            <div class="todos-items">
                 <div class="todos-item">
-                    <input name="first" type="radio" value="active">HTML
+                    <input name="first" type="checkbox" value="active">HTML
                     <button class="todos-item-delete"></button>
                 </div>
-            </label>
-            <label>
                 <div class="todos-item">
-                    <input name="second" type="radio" value="active">CSS
+                    <input name="second" type="checkbox" value="active">CSS
                     <button class="todos-item-delete"></button>
                 </div>
-            </label>
-            <label>
                 <div class="todos-item">
-                    <input name="third" type="radio" value="active">JS
+                    <input name="third" type="checkbox" value="active">JS
                     <button class="todos-item-delete"></button>
                 </div>
-            </label>
-            <label>
                 <div class="todos-item">
-                    <input name="fourth" type="radio" value="active">JS tools
+                    <input name="fourth" type="checkbox" value="active">JS tools
                     <button class="todos-item-delete"></button>
                 </div>
-            </label>
+            </div>
             <div class="todos-footer">
                 <span class="todos-items-left">3 items left</span>
-                <div class=todos-footer-radio>
+                <div class=todos-footer-filter>
                     <label>
                         <input name="type-view" type="radio" value="all">All</label>
                     <label>
@@ -55,5 +48,4 @@
         </div>
     </div>
 </body>
-
 </html>
