@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Todos</title>
+    <!--    <link rel="stylesheet" href="styles.css">-->
 </head>
+
 <body>
-<div class="todos">
-    <h1 class="todos-header">todos</h1>
-    <select  multiple class="todos-selector">
-        <option  class="todos-selector"><div class="todos-selector-option-circle-button">HTML</div></option>
-        <option class="todos-selector"><div class="todos-selector-option-circle-button">CSS</div></option>
-        <option class="todos-selector"><div class="todos-selector-option-circle-button">JS</div></option>
-        <option class="todos-selector"><div class="todos-selector-option-circle-button">JS tools</div></option>
-        <div class="todos-selector-footer">
-            <input name="one" type="radio" value="all"> <span>All</span> 
-        <input name="one" type="radio" value="active"> <span>Active</span> 
-        <input name="one" type="radio" value="completed"> <span>Completed</span> 
+    <div class="todos">
+        <h1 class="todos-header">todos</h1>
+        <div class="todos-main">
+            <div class="todos-add">
+                <button></button>
+                <input name="todos-add-input" type="text" value="What needs to be done?">
+            </div>
+            <div class="todos-items">
+                <div class="todos-item">
+                    <input name="first" type="checkbox" value="active">HTML
+                    <button class="todos-item-delete"></button>
+                </div>
+                <div class="todos-item">
+                    <input name="second" type="checkbox" value="active">CSS
+                    <button class="todos-item-delete"></button>
+                </div>
+                <div class="todos-item">
+                    <input name="third" type="checkbox" value="active">JS
+                    <button class="todos-item-delete"></button>
+                </div>
+                <div class="todos-item">
+                    <input name="fourth" type="checkbox" value="active">JS tools
+                    <button class="todos-item-delete"></button>
+                </div>
+            </div>
+            <div class="todos-footer">
+                <span class="todos-items-left">3 items left</span>
+                <div class=todos-footer-filter>
+                    <label>
+                        <input name="type-view" type="radio" value="all">All</label>
+                    <label>
+                        <input name="type-view" type="radio" value="active">Active</label>
+                    <label>
+                        <input name="type-view" type="radio" value="completed">Completed</label>
+                </div>
+                <button class="todos-all-completed">Clear completed</button>
+            </div>
         </div>
-    </select>
-</div>
+    </div>
 </body>
 </html>
