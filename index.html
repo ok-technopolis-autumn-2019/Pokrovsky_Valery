@@ -19,49 +19,50 @@
             </div>
             <div class="todos-items">
                 <div class="todos-item">
-                    <div class="todos-item-checkbox">
-                        <input class="todos-item-checkbox-false" name="first" type="checkbox" value="active">
-                    </div>
+                     <input class="todos-item-checkbox-false" name="first" id="first" type="checkbox" value="active">
+                    <label for="first" class="todos-item-checkbox">
+                    </label>
                     <span class=todos-item-description>Сьешь же еще этих французских булок да выпей чаю Сьешь же еще этих французских булок да выпей чаю Сьешь же еще этих французских булок да выпей чаю Сьешь же еще этих французских булок да выпей чаю Сьешь же еще этих французских булок да выпей чаю</span>
                     <div class="todos-item-delete">
                     <button aria-label="todos-item-delete" class="todos-item-delete-false"></button></div>
                 </div>
                 <div class="todos-item">
-                    <div class="todos-item-checkbox">
-                        <input class="todos-item-checkbox-false" name="second" type="checkbox" value="active">
-                    </div><span class=todos-item-description>CSS</span>
+                    <input class="todos-item-checkbox-false" name="second" id="second" type="checkbox" value="active">
+                    <label for="second" class="todos-item-checkbox">
+                    </label><span class=todos-item-description>CSS</span>
                     <div class="todos-item-delete">
                     <button aria-label="todos-item-delete" class="todos-item-delete-false"></button></div>
                 </div>
                 </div>
                 <div class="todos-item">
-                    <div class="todos-item-checkbox">
-                        <input class="todos-item-checkbox-false" name="third" type="checkbox" value="active">
-                    </div><span class=todos-item-description>JS</span>
+                    <input class="todos-item-checkbox-false" name="third" id="third" type="checkbox" value="active">
+                    <label for="third" class="todos-item-checkbox">
+                    </label><span class=todos-item-description>JS</span>
                      <div class="todos-item-delete">
                     <button aria-label="todos-item-delete" class="todos-item-delete-false"></button></div>
                 </div>
                 <div class="todos-item">
-                    <div class="todos-item-checkbox">
-                        <input class="todos-item-checkbox-false" name="fourth" type="checkbox" value="active">
-                    </div><span class=todos-item-description>JS tools</span>
+                     <input class="todos-item-checkbox-false" name="fourth" id="fourth" type="checkbox" value="active">
+                    <label for="fourth" class="todos-item-checkbox">
+                    </label><span class=todos-item-description>JS tools</span>
                      <div class="todos-item-delete">
                     <button aria-label="todos-item-delete" class="todos-item-delete-false"></button></div>
                 </div>
             <div class="todos-footer">
                 <span class="todos-items-left">3 items left</span>
                 <div class=todos-footer-filter>
-                    <div class="filter-button">
+                    <label class="filter-button">
                     <div class="filter-button-false">
-                        <input name="type-view" type="radio" value="all"></div>All</div>
-                    <div class="filter-button">
+                        <input name="type-view" type="radio" value="all"></div>All</label>
+                    <label class="filter-button">
                     <div class="filter-button-false">
-                        <input name="type-view" type="radio" value="active"></div>Active</div>
-                    <div class="filter-button">
+                        <input name="type-view" type="radio" value="active"></div>Active</label>
+                    <label class="filter-button">
                     <div class="filter-button-false">
-                        <input name="type-view" type="radio" value="completed"></div>Completed</div>
+                        <input name="type-view" type="radio" value="completed"></div>Completed</label>
                 </div>
-                <button aria-label="todos-all-completed" class="todos-all-completed">Clear completed</button>
+                <div class="todos-all-completed">
+                    <button aria-label="todos-all-completed" class="todos-all-completed-false"></button>Clear completed</div>
             </div>
         </div>
     </div>
