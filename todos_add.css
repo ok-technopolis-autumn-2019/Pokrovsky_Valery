@@ -1,0 +1,32 @@
+.todos__add{
+    display: flex;
+    padding: 2%;
+    border-bottom: solid 1px #F5F5F5;
+    
+}
+.todos__show-false{
+    opacity: 0;
+}
+.todos__show{
+    padding: 2px;
+    margin: 5px;
+    background: url("list.svg") 20px;
+}
+.todos__show:focus{
+    padding: 2px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: url("list.svg") 20px;
+}
+.todos__add-input{
+    border: 0px;
+    outline: none;
+    flex-grow: 1;
+    font-style: italic;
+    color: darkgrey;
+    font-size: 16px;
+}
+.todos__add-input:focus{
+    background: #FFFFFF;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}

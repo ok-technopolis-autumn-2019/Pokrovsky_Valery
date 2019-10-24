@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Todos</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <div class="todos">
-        <h1 class="todos-header">todos</h1>
-        <div class="todos-main">
-            <div class="todos-add">
-                <div class="list-of-todos">
-                    <button class="list-of-todos-false" aria-label="list-of-todos"></button>
-                </div>
-                <input class="todos-add-input" name="todos-add-input" type="text" value="What needs to be done?">
+   <head>
+      <meta charset="UTF-8">
+      <title>Todos</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="todos_item.css">
+      <link rel="stylesheet" href="todos_add.css">
+      <link rel="stylesheet" href="todos_footer.css">
+<!--      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>-->
+   </head>
+   <body>
+      <div class="todos">
+         <h1 class="todos__header">todos</h1>
+         <div class="todos__main">
+            <div class="todos__add">
+               <div class="todos__show">
+                  <button class="todos__show-false" aria-label="todos-show"></button>
+               </div>
+               <input class="todos__add-input" name="todos__add-input" type="text" value="What needs to be done?">
             </div>
-            <div class="todos-items">
-                <div class="todos-item">
-                     <input class="todos-item-checkbox-false" name="first" id="first" type="checkbox" value="active">
-                    <label for="first" class="todos-item-checkbox">
-                    </label>
-                    <span class=todos-item-description>Сьешь же еще этих французских булок да выпей чаю Сьешь же еще этих французских булок да выпей чаю Сьешь же еще этих французских булок да выпей чаю Сьешь же еще этих французских булок да выпей чаю Сьешь же еще этих французских булок да выпей чаю</span>
-                    <div class="todos-item-delete">
-                    <button aria-label="todos-item-delete" class="todos-item-delete-false"></button></div>
-                </div>
-                <div class="todos-item">
-                    <input class="todos-item-checkbox-false" name="second" id="second" type="checkbox" value="active">
-                    <label for="second" class="todos-item-checkbox">
-                    </label><span class=todos-item-description>CSS</span>
-                    <div class="todos-item-delete">
-                    <button aria-label="todos-item-delete" class="todos-item-delete-false"></button></div>
-                </div>
-                </div>
-                <div class="todos-item">
-                    <input class="todos-item-checkbox-false" name="third" id="third" type="checkbox" value="active">
-                    <label for="third" class="todos-item-checkbox">
-                    </label><span class=todos-item-description>JS</span>
-                     <div class="todos-item-delete">
-                    <button aria-label="todos-item-delete" class="todos-item-delete-false"></button></div>
-                </div>
-                <div class="todos-item">
-                     <input class="todos-item-checkbox-false" name="fourth" id="fourth" type="checkbox" value="active">
-                    <label for="fourth" class="todos-item-checkbox">
-                    </label><span class=todos-item-description>JS tools</span>
-                     <div class="todos-item-delete">
-                    <button aria-label="todos-item-delete" class="todos-item-delete-false"></button></div>
-                </div>
-            <div class="todos-footer">
-                <span class="todos-items-left">3 items left</span>
-                <div class=todos-footer-filter>
-                    <label class="filter-button">
-                    <div class="filter-button-false">
-                        <input name="type-view" type="radio" value="all"></div>All</label>
-                    <label class="filter-button">
-                    <div class="filter-button-false">
-                        <input name="type-view" type="radio" value="active"></div>Active</label>
-                    <label class="filter-button">
-                    <div class="filter-button-false">
-                        <input name="type-view" type="radio" value="completed"></div>Completed</label>
-                </div>
-                <div class="todos-all-completed">
-                    <button aria-label="todos-all-completed" class="todos-all-completed-false"></button>Clear completed</div>
+            <div class="todos__items">
+               <div class="todos__item">
+                  <input class="todos__item-checkbox-false" name="first" id="first" type="checkbox" value="active">
+                  <label for="first" class="todos__item-checkbox">
+                  </label>
+                  <span class=todos__item-description>HTML</span>
+                  <div class="todos__item-delete">
+                     <button aria-label="todos__item-delete" class="todos__item-delete-false"></button>
+                  </div>
+               </div>
+               <div class="todos__item">
+                  <input class="todos__item-checkbox-false" name="second" id="second" type="checkbox" value="active">
+                  <label for="second" class="todos__item-checkbox">
+                  </label><span class=todos__item-description>CSS</span>
+                  <div class="todos__item-delete">
+                     <button aria-label="todos__item-delete" class="todos__item-delete-false"></button>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</body>
-
+            <div class="todos__item">
+               <input class="todos__item-checkbox-false" name="third" id="third" type="checkbox" value="active">
+               <label for="third" class="todos__item-checkbox">
+               </label><span class=todos__item-description>JS</span>
+               <div class="todos__item-delete">
+                  <button aria-label="todos__item-delete" class="todos__item-delete-false"></button>
+               </div>
+            </div>
+            <div class="todos__item">
+               <input class="todos__item-checkbox-false" name="fourth" id="fourth" type="checkbox" value="active">
+               <label for="fourth" class="todos__item-checkbox">
+               </label><span class=todos__item-description>JS tools</span>
+               <div class="todos__item-delete">
+                  <button aria-label="todos__item-delete" class="todos__item-delete-false"></button>
+               </div>
+            </div>
+            <div class="todos__empty-item">
+            </div>
+            <div class="todos__footer">
+               <span class="todos__items-left">3 items left</span>
+               <div class=todos__footer-filter>
+                  <input class="todos__filter-button-false" name="type-view" id="todos-all" type="radio" value="all">
+                  <label for="todos-all" class="todos__filter-button">All</label>
+                  <input class="todos__filter-button-false" name="type-view" id="todos-active" type="radio" value="active">
+                  <label for="todos-active" class="todos__filter-button">Active</label>
+                  <input class="todos__filter-button-false" name="type-view" type="radio" id="todos-completed" value="completed">
+                  <label for="todos-completed" class="todos__filter-button">Completed</label>
+                </div>
+                  <button aria-label="todos-all-completed" class="todos__all-completed">Clear completed</button>
+            </div>
+         </div>
+         <div class = todos__pseudo-shadow></div>
+         <div class = todos__pseudo-shadow-two></div>
+      </div>
+   </body>
 </html>

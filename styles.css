@@ -1,4 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 body{
+    font-family: 'Roboto', sans-serif;
     background: #F5F5F5;
 }
 
@@ -10,131 +12,27 @@ body{
     margin-right: auto;
 }
 
-.todos-header{
+.todos__header{
+    margin: 0px;
+    font-size: 48px;
     text-align: center;
+    font-weight: lighter;
+    color: #EBDFDF; 
 }
-.todos-main{
+.todos__main{
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5);
     background: #FFFFFF;
 }
-.todos-add{
-    display: flex;
-    padding: 2%;
-    border: solid 1px  #F5F5F5;
-    
-}
-.list-of-todos-false{
-    opacity: 0;
-}
-.list-of-todos{
-    padding: 2px;
-    margin: 5px;
-    background: url("list.svg") 20px;
-}
-.todos-add-input{
-    border: 0px;
-    outline: none;
-    flex-grow: 1;
-    font-family:sans-serif;
-    font-style: italic;
-    color: darkgrey;
-    font-size: 16px;
-}
-
-
-.todos-item{
-    display: flex;
-    
-    align-items: center;
-    padding: 2%;
-    border: solid 1px #F5F5F5;
-    font-family:sans-serif;
-}
-.todos-item:hover{
-    background: #FAFAFA;
-    padding: 2%;
-    text-align: left;
-    border: solid 1px #F5F5F5;
-}
-
-.todos-item-delete{
-    visibility: hidden;
-    flex-grow: 0;
-    margin-left: auto;
-    height: 20%;
-    padding: 2px;
-    background: url("delete.svg");
-}
-.todos-item:hover .todos-item-delete{
-    visibility:visible;
-}
-.todos-item-delete-false{
-    opacity: 0;
-}
-.todos-item-checkbox-false{
-    position: absolute;
-    z-index: 1;
-    opacity: 0.5;
-}
-
-.todos-item-checkbox-false + .todos-item-checkbox{
-    flex-shrink: 0;
-    background: #FFFFFF;
-    margin: 2px;
-    height: 20px;
-    width: 20px;
-    border-radius: 10px;
-    background: url("done.svg");
-    border: 1px solid;
-}
-/*
-.todos-item:hover  .todos-item-checkbox{
-    background: url("done.svg") 20px;
-    align-content: center;
-    border: 1px solid;
-*/
-}
-.todos-item-checkbox-false:checked + .todos-item-checkbox{
-   
-    background: url("done.svg");
-    border: 1px solid;
-}
-
-
-
-
-.todos-footer{
-    display: flex;
-    align-items: baseline;
-    padding: 2%;
-    font-family: sans-serif;
-    font-size: 12px;
-    color: darkgrey;
-}
-.todos-items-left{
-}
-.todos-footer-filter{
+.todos__pseudo-shadow{
+    width: 99%;
+    height: 4px;
     margin: auto;
-    display: flex;
-    align-items: middle;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
-.filter-button{
-    padding: 4px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 2px;
-    border: 1px solid dimgray;
-}
-.filter-button-false{
-    position: absolute;
-    z-index: 1;
-    opacity: 0.5;
+.todos__pseudo-shadow-two{  
+    width: 98%;
+    height: 4px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-.todos-all-completed-false{
-    position: absolute;
-    z-index: 1;
-    opacity: 0.5;
-}
-.todos-all-completed{
-    margin-left: auto
-}
