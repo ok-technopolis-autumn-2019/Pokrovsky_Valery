@@ -7,7 +7,8 @@ body{
 
 .todos{
     display: block;
-    width: 40%;
+    min-width: 500px;
+    width: 40px;
     margin-left: auto;
     margin-right: auto;
 }
