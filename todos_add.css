@@ -4,19 +4,16 @@
     border-bottom: solid 1px #F5F5F5;
     
 }
-.todos__show-false{
-    opacity: 0;
-}
+
 .todos__show{
-    padding: 2px;
-    margin: 5px;
-    background: url("list.svg") 20px;
+    border: none;
+    padding: 10px;
+    margin: 4px;
+    background: url("list.svg") no-repeat ;
 }
 .todos__show:focus{
-    padding: 2px;
-    margin: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background: url("list.svg") 20px;
+    outline: none;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 .todos__add-input{
     border: 0px;

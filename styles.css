@@ -9,6 +9,7 @@ body{
     display: block;
     min-width: 500px;
     width: 40px;
+    
     margin-left: auto;
     margin-right: auto;
 }
@@ -21,19 +22,32 @@ body{
     color: #EBDFDF; 
 }
 .todos__main{
+    position: relative;
     box-shadow: 0 1px 4px rgba(0,0,0,0.5);
     background: #FFFFFF;
 }
-.todos__pseudo-shadow{
-    width: 99%;
+.todos__main::before{
+    position: absolute;
     height: 4px;
-    margin: auto;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
-.todos__pseudo-shadow-two{  
-    width: 98%;
-    height: 4px;
-    margin: auto;
+    content: ' ';
+    width: 498px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 365px;
+    z-index: -1;
+    background: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
+.todos__main::after{
+    position: absolute;
+    height: 4px;
+    content: ' ';
+    width: 496px;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    z-index: -2;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
